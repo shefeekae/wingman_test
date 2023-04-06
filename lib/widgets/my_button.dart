@@ -15,23 +15,6 @@ class MyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return GestureDetector(
-    //   onTap: onTap,
-    //   child: Container(
-    //     decoration: BoxDecoration(
-    //       borderRadius: BorderRadius.circular(6),
-    //       color: const Color.fromARGB(255, 66, 217, 147),
-    //     ),
-    //     width: double.infinity,
-    //     height: size.height * .065,
-    //     child: Center(
-    //         child: Text(
-    //       "Continue",
-    //       style: GoogleFonts.sansita(color: Colors.white, fontSize: 18),
-    //     )),
-    //   ),
-    // );
-
     return SizedBox(
       width: double.infinity,
       height: size.height * .065,

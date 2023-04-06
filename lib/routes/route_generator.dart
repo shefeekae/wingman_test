@@ -3,6 +3,7 @@ import 'package:wingman_test/auth/auth.dart';
 import 'package:wingman_test/view/home_screen.dart';
 import 'package:wingman_test/view/login_screen.dart';
 import 'package:wingman_test/view/otp_screen.dart';
+import 'package:wingman_test/view/splash_screen.dart';
 import 'package:wingman_test/view/user_info_screen.dart';
 
 class RouteGenerator {
@@ -11,6 +12,11 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
+        return MaterialPageRoute(
+          builder: (context) => const SplashScreen(),
+        );
+
+      case '/auth':
         return MaterialPageRoute(
           builder: (context) => const AuthPage(),
         );

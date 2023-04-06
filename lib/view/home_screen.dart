@@ -16,13 +16,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      // appBar: AppBar(
-      //   actions: [
-      //     IconButton(
-      //         onPressed: () => ,
-      //         icon: const Icon(Icons.logout))
-      //   ],
-      // ),
       body: Center(
         child: Stack(
           children: [
@@ -79,6 +72,9 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
+
+                    // Image
+
                     Image.asset(
                       'assets/peace-transformed.png',
                       height: 300,
@@ -86,6 +82,9 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
+
+                    //Sign Out button
+
                     ElevatedButton(
                       onPressed: () {
                         showDialog(

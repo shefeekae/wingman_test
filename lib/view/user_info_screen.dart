@@ -32,6 +32,7 @@ class UserInfoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return GestureDetector(
+      //Dismissing the keyboard on tapping anywhere on the screen
       onTap: () {
         FocusScopeNode currentFocus = FocusScope.of(context);
         if (!currentFocus.hasPrimaryFocus) {
@@ -77,6 +78,7 @@ class UserInfoScreen extends StatelessWidget {
                   hintText: 'Name',
                   controller: nameController,
                 ),
+                //Error message
                 Visibility(
                     visible:
                         !Provider.of<ValidationProvider>(context, listen: true)
@@ -102,6 +104,7 @@ class UserInfoScreen extends StatelessWidget {
                   hintText: 'Email',
                   controller: emailController,
                 ),
+                //Error message
                 Visibility(
                     visible:
                         !Provider.of<ValidationProvider>(context, listen: true)

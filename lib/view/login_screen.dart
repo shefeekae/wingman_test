@@ -8,12 +8,10 @@ import 'package:wingman_test/widgets/my_button.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
-  // final _formKey = GlobalKey<FormState>();
+
   final TextEditingController mobileNumberController = TextEditingController();
   final TextEditingController countryCodeTextController =
       TextEditingController();
-
-  // final String number;
 
   final LoginController loginController = LoginController();
 
@@ -86,6 +84,7 @@ class LoginScreen extends StatelessWidget {
                 countryCodeTextController: countryCodeTextController,
                 mobileNumberController: mobileNumberController,
               ),
+              //Error message
               Visibility(
                   visible:
                       !Provider.of<ValidationProvider>(context, listen: true)

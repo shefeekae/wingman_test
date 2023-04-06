@@ -38,6 +38,7 @@ class OtpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return GestureDetector(
+      //Dismissing the keyboard on tapping anywhere on the screen
       onTap: () {
         FocusScopeNode currentFocus = FocusScope.of(context);
 

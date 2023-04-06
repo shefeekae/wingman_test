@@ -5,13 +5,20 @@ import 'package:wingman_test/model/send_otp/request_model.dart';
 import 'package:wingman_test/model/send_otp/response_model.dart';
 
 class LoginService {
+  //send OTP
+
   Future<OtpResponse> sendOtp({required MobileNumber number}) async {
     const url = "$baseUrl/sendotp.php";
     final uri = Uri.parse(url);
 
-    final response = await http.post(uri,
-        body: jsonEncode(number),
-        headers: {'Content-Type': 'application/json'});
+    var headers = {
+      "Access-Control-Allow-Origin": "*",
+      'Content-Type': 'application/json',
+      'Accept': '*/*'
+    };
+
+    final response =
+        await http.post(uri, body: jsonEncode(number), headers: headers);
 
     final otpResponse = otpResponseFromJson(response.body);
 
