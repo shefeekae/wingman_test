@@ -22,7 +22,9 @@ class ProfileController {
     if (data.status) {
       authProvider.setBool(true);
 
-      navigator.pushNamedAndRemoveUntil('/home', (route) => false);
+      navigator.pushReplacementNamed(
+        '/home',
+      );
     }
   }
 }

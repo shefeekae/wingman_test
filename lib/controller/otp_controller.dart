@@ -27,9 +27,13 @@ class OtpController {
     if (data.status) {
       await authProvider.persistToken(data.jwt);
       if (data.profileExists) {
-        navigator.pushNamedAndRemoveUntil('/home', (route) => false);
+        navigator.pushReplacementNamed(
+          '/home',
+        );
       } else {
-        navigator.pushNamedAndRemoveUntil('/userInfo', (route) => false);
+        navigator.pushReplacementNamed(
+          '/userInfo',
+        );
       }
     } else {
       showError(data.response);
