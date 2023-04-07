@@ -1,11 +1,9 @@
 import 'dart:convert';
-import 'dart:developer';
-import 'dart:io';
+
 import 'package:wingman_test/constants/api_constants.dart';
 import 'package:wingman_test/model/verify_otp/otp_request_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:wingman_test/model/verify_otp/otp_response_model.dart';
-import 'package:wingman_test/utils/utils.dart';
 
 class OtpService {
   // verify OTP
