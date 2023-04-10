@@ -16,16 +16,19 @@ class OtpTextField extends StatelessWidget {
       child: TextFormField(
         controller: controller,
         autofocus: autofocus,
+        cursorColor: Colors.deepPurple,
         decoration: InputDecoration(
-          border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.grey)),
+          contentPadding: const EdgeInsets.all(8),
+          // border: OutlineInputBorder(
+          //     borderRadius: BorderRadius.circular(10),
+          //     borderSide: const BorderSide(color: Colors.grey)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.black)),
+              borderSide:
+                  const BorderSide(color: Color.fromARGB(255, 114, 113, 113))),
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(color: Colors.grey)),
+              borderSide: const BorderSide(color: Colors.white)),
         ),
         onSaved: (pin1) {},
         onChanged: (value) {
@@ -33,7 +36,11 @@ class OtpTextField extends StatelessWidget {
             FocusScope.of(context).nextFocus();
           }
         },
-        style: Theme.of(context).textTheme.headline6,
+        // style: Theme.of(context).textTheme.headline1,
+        style: const TextStyle(
+          fontSize: 23,
+          color: Colors.white,
+        ),
         keyboardType: TextInputType.number,
         textAlign: TextAlign.center,
         inputFormatters: [

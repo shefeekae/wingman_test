@@ -20,10 +20,10 @@ class MyButton extends StatelessWidget {
       height: size.height * .065,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-          backgroundColor: const Color.fromARGB(255, 66, 217, 147),
-        ),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+            // backgroundColor: const Color.fromARGB(255, 66, 217, 147),
+            backgroundColor: Colors.deepPurple),
         onPressed: onTap,
         child: Center(
             child: Text(

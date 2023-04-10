@@ -50,10 +50,8 @@ class UserInfoScreen extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomRight,
                   colors: [
-                    // Color.fromARGB(255, 3, 177, 216),
-                    // Color.fromARGB(255, 33, 58, 243),
                     Color.fromARGB(255, 221, 221, 221),
-                    Colors.white,
+                    Color.fromARGB(255, 123, 86, 226),
                   ]),
             ),
             child: Column(
@@ -65,11 +63,13 @@ class UserInfoScreen extends StatelessWidget {
                 Text(
                   "Welcome",
                   style: GoogleFonts.lato(
-                      fontSize: 38, fontWeight: FontWeight.bold),
+                      color: Colors.white,
+                      fontSize: 38,
+                      fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "Looks like you are new here. Tell us a bit of yourself.",
-                  style: GoogleFonts.lato(fontSize: 20),
+                  style: GoogleFonts.lato(fontSize: 17, color: Colors.white),
                 ),
                 const SizedBox(
                   height: 20,

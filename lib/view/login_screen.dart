@@ -48,11 +48,8 @@ class LoginScreen extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                // Color.fromARGB(255, 0, 181, 112),
-                // Color.fromARGB(255, 33, 58, 243),
-                // Color.fromARGB(255, 7, 179, 171),
                 Color.fromARGB(255, 221, 221, 221),
-                Colors.white,
+                Color.fromARGB(255, 123, 86, 226),
               ])),
           padding: EdgeInsets.symmetric(horizontal: size.width * .04),
           height: size.height,
@@ -74,7 +71,7 @@ class LoginScreen extends StatelessWidget {
                 style: GoogleFonts.lato(
                   fontWeight: FontWeight.bold,
                   fontSize: size.height * .06,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
               ),
               const SizedBox(

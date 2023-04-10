@@ -34,6 +34,7 @@ class MobileTextField extends StatelessWidget {
           SizedBox(
             width: 40,
             child: TextFormField(
+              cursorColor: Colors.deepPurple,
               keyboardType: TextInputType.phone,
 
               // cursorColor: Colors.white,
@@ -59,6 +60,7 @@ class MobileTextField extends StatelessWidget {
           ),
           Expanded(
               child: TextFormField(
+            cursorColor: Colors.deepPurple,
             keyboardType: TextInputType.number,
             controller: mobileNumberController,
             // cursorColor: Colors.white,

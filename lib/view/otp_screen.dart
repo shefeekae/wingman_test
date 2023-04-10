@@ -61,8 +61,12 @@ class OtpScreen extends StatelessWidget {
                     // Color.fromARGB(255, 33, 58, 243),
                     // Color.fromARGB(255, 0, 181, 112),
                     // Color.fromARGB(255, 7, 179, 171),
-                    Color.fromARGB(255, 221, 221, 221),
+                    // Color.fromARGB(255, 221, 221, 221),
                     Colors.white,
+
+                    // Colors.purple,
+                    // Colors.purpleAccent,
+                    Color.fromARGB(255, 123, 86, 226)
                     // Color.fromARGB(255, 221, 221, 221),
                   ]),
             ),
@@ -84,7 +88,7 @@ class OtpScreen extends StatelessWidget {
                   style: GoogleFonts.lato(
                     fontWeight: FontWeight.bold,
                     fontSize: size.height * .05,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(
@@ -92,7 +96,7 @@ class OtpScreen extends StatelessWidget {
                 ),
                 Text(
                   "OTP has been sent to +91-$number",
-                  style: GoogleFonts.lato(fontSize: 15, color: Colors.black),
+                  style: GoogleFonts.lato(fontSize: 17, color: Colors.white),
                 ),
                 const SizedBox(
                   height: 20,
